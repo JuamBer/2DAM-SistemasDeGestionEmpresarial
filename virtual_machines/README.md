@@ -11,10 +11,15 @@ Estas máquinas virtuales están creadas con Virtual Box.
 * **Port:** 5432
 * **Usuario Administrador PostgreSQL:** openpg
 * **Contraseña Administrador PostgreSQL:** openpgpwd
-### - Odoo
+### - Odoo Por Defecto
 * **Hostname:** localhost
 * **Port:** 8069
-        
+
+### - Odoo Pycharm (Cargar Módulos Nuevos)
+* **Hostname:** localhost
+* **Port:** 8070 
+* **THE SERVICE MUST BE LAUNCHED** 
+
 #### - Hay una empresa en Odoo(Base de Datos en PostgreSQL) por defecto con el Módulo CRM.
 * **Database Name:** Prueba
 * **Email:** email
