@@ -3,6 +3,7 @@
 Estas máquinas virtuales están creadas con Virtual Box.
 
 ## Configuración Predeterminada Windows 10
+Esta máquina virtual viene con Odoo 13 y Pycharm. Además de la configuración para cargar módulos externos
 ### - Windows
 * **Usuario Administrador Windows:** user
 * **Contraseña Administrador Windows:** 1234
@@ -31,6 +32,8 @@ Estas máquinas virtuales están creadas con Virtual Box.
     
 
 ## Configuración Predeterminada Ubuntu 20.4.3
+Esta máquina virtual viene con Odoo 13 y Pycharm. La conexión entre Odoo y Pycharm no está creada.
+
 ### - Ubuntu 20.4.3
 * **Usuario Administrador Ubuntu:** user
 * **Contraseña Administrador Ubuntu:** 1234
