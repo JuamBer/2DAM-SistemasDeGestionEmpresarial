@@ -33,5 +33,5 @@ Creamos la carpeta "extra-addons" dónde alojaremos los nuevos módulos.
 En la terminal de Pycharm ejecutamos la siguiente línea:
 pip install -r "C:\Program Files (x86)\Odoo 13.0\server\requirements.txt"
 
-Falta congigurar el ejecutable del proyecto dónde pondremos el siguiente archivo de inicio: "C:\Program Files (x86)\Odoo 13.0\server\odoo-bin" con la siguiente configuración: --conf "C:\Users\user\Documents\2DAM-SistemasDeGestionEmpresarial\odoo.conf"
+Falta configurar el ejecutable del proyecto dónde pondremos el siguiente archivo de inicio: "C:\Program Files (x86)\Odoo 13.0\server\odoo-bin" con la siguiente configuración: --conf "C:\Users\user\Documents\2DAM-SistemasDeGestionEmpresarial\odoo.conf"
 
