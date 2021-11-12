@@ -20,7 +20,8 @@
 ## Configuración 🛠️
 
 ❌ LA MÁQUINA VIRTUAL YA ESTÁ CONFIGURADA ❌
-Esta configuración es por si quieres probar los módulos en tu pripia máquina virtual.
+
+Esta configuración es por si quieres probar los módulos en tu propia máquina virtual.
 
 Si ya tiene instalado Odoo 13.
 
