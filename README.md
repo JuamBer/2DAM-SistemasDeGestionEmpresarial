@@ -2,11 +2,13 @@
 
 ## Tecnologías 🚀
 
-* **Python**  
+* **Python 3.7**  
 
 ## Pogramas Utilizados 📌
 
 * **Odoo 13**
+* **PyCharm**
+* **PgAdmin III**
 * **Visual Studio**
 
 ## Control De Versiones 📌
