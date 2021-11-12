@@ -1,4 +1,7 @@
 # Maquinas Virtuales
+
+Estas máquinas virtuales están creadas con Virtual Box.
+
 ## Configuración Predeterminada Windows 10
 ### - Windows
 * **Usuario Administrador Windows:** user
