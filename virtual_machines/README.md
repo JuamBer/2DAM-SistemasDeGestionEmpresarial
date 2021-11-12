@@ -18,7 +18,7 @@ Estas máquinas virtuales están creadas con Virtual Box.
 ### - Odoo Pycharm (Cargar Módulos Nuevos)
 * **Hostname:** localhost
 * **Port:** 8070 
-* **THE SERVICE MUST BE LAUNCHED** 
+* **❌HAY QUE LANZAR EL SERVICIO MANUALMENTE❌** 
 
 #### - Hay una empresa en Odoo(Base de Datos en PostgreSQL) por defecto con el Módulo CRM.
 * **Database Name:** Prueba
