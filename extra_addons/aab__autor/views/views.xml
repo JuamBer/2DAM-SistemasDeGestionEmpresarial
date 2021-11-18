@@ -9,14 +9,24 @@
         <tree>
           <field name="nombre"/>
           <field name="edad"/>
-          <field name="foto"/>
           <field name="fecha_nacimiento"/>
           <field name="sexo"/>
-          <field name="descripcion"/>
         </tree>
       </field>
     </record>
-
+<!--
+    <record model="ir.ui.view" id="aab__autor.list1">
+      <field name="name">AAB_Autor list</field>
+      <field name="model">aab__autor.aab__autor</field>
+      <field name="arch" type="xml">
+        <form>
+          <field name="nombre"/>
+          <field name="edad"/>
+          <field name="fecha_nacimiento"/>
+          <field name="sexo"/>
+        </form>
+      </field>
+    </record>-->
 
     <!-- actions opening views on models -->
 
