@@ -1,481 +1,173 @@
-2021-11-18 12:33:41,241 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:33:41] "POST /web/dataset/call_kw/aab__autor.aab__autor/default_get HTTP/1.1" 200 - 1 0.000 0.014
-2021-11-18 12:33:43,128 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:33:43] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.002 0.009
-2021-11-18 12:33:44,709 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:33:44] "POST /web/dataset/call_kw/aab__autor.aab__autor/read HTTP/1.1" 200 - 3 0.000 0.016
-2021-11-18 12:33:46,412 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:33:46] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.000 0.000
-2021-11-18 12:33:48,370 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:33:48] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.002 50.041
-2021-11-18 12:34:38,750 3260 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:34:38] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.010 50.042
-2021-11-18 12:35:17,856 3260 INFO ? odoo.service.server: Initiating shutdown 
-2021-11-18 12:35:17,856 3260 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
-2021-11-18 12:35:24,178 5768 INFO ? odoo: Odoo version 13.0-20211104 
-2021-11-18 12:35:24,178 5768 INFO ? odoo: Using configuration file at C:\Users\user\Documents\2DAM-SistemasDeGestionEmpresarial\odoo.conf 
-2021-11-18 12:35:24,178 5768 INFO ? odoo: addons paths: ['C:\\Program Files (x86)\\Odoo 13.0\\server\\odoo\\addons', 'c:\\users\\user\\appdata\\local\\openerp s.a\\odoo\\addons\\13.0', 'c:\\program files (x86)\\odoo 13.0\\server\\odoo\\addons', 'c:\\users\\user\\documents\\2dam-sistemasdegestionempresarial\\extra_addons'] 
-2021-11-18 12:35:24,178 5768 INFO ? odoo: database: openpg@localhost:5432 
-2021-11-18 12:35:25,071 5768 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files (x86)\Odoo 13.0\thirdparty\wkhtmltopdf.exe 
-2021-11-18 12:35:25,599 5768 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-AD87TG3:8070 
-2021-11-18 12:35:26,029 5768 INFO ? odoo.http: HTTP Configuring static files 
-2021-11-18 12:35:26,045 5768 INFO Prueba odoo.modules.loading: loading 1 modules... 
-2021-11-18 12:35:26,100 5768 INFO Prueba odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries 
-2021-11-18 12:35:26,209 5768 INFO Prueba odoo.modules.loading: loading 31 modules... 
-2021-11-18 12:35:27,103 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:27] "GET /web/static/src/img/spin.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:27,425 5768 INFO Prueba odoo.modules.loading: 31 modules loaded in 1.22s, 0 queries 
-2021-11-18 12:35:29,063 5768 INFO Prueba odoo.modules.loading: Modules loaded. 
-2021-11-18 12:35:29,152 5768 INFO Prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
-2021-11-18 12:35:29,182 5768 INFO Prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
-2021-11-18 12:35:30,054 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:30] "POST /web/dataset/search_read HTTP/1.1" 200 - 4 0.027 3.892
-2021-11-18 12:35:30,217 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:30] "POST /web/action/load HTTP/1.1" 200 - 44 0.167 4.122
-2021-11-18 12:35:30,881 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:30] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 75 0.093 0.235
-2021-11-18 12:35:30,981 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:30] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.016 0.021
-2021-11-18 12:35:31,521 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,527 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,531 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,532 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,534 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,536 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /website/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,830 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /project/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,835 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,851 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /stock/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,853 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,857 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /account/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:31,864 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:31] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,152 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,154 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,165 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /note/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,175 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,179 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,184 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,482 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,483 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,486 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,497 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,503 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /board/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,503 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,813 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,814 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,817 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /mail/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,825 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,830 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:32,832 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:32] "GET /base/static/img/icons/project_forecast.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,163 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,163 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,163 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,163 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,173 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/website_calendar.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,204 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "POST /web/dataset/search_read HTTP/1.1" 200 - 4 0.013 0.042
-2021-11-18 12:35:33,493 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /survey/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,497 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,499 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,501 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,507 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,516 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,829 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,830 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /base/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,837 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,844 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /website_blog/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,846 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /website_forum/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:33,850 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:33] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,147 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,147 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,163 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,180 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /repair/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,180 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,227 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.038 0.042
-2021-11-18 12:35:34,474 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /website_crm/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:34,476 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:34] "GET /account_check_printing/static/description/icon.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:37,581 5768 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['aab__autor'] to user __system__ #1 via 127.0.0.1 
-2021-11-18 12:35:37,586 5768 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['aab__autor'] to user __system__ #1 via 127.0.0.1 
-2021-11-18 12:35:37,587 5768 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['aab__autor'] to user __system__ #1 via 127.0.0.1 
-2021-11-18 12:35:39,968 5768 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via 127.0.0.1 
-2021-11-18 12:35:40,028 5768 INFO Prueba odoo.modules.loading: loading 1 modules... 
-2021-11-18 12:35:40,068 5768 INFO Prueba odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries 
-2021-11-18 12:35:40,709 5768 INFO Prueba odoo.modules.loading: updating modules list 
-2021-11-18 12:35:40,709 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:40] "GET /web/static/src/img/spin.png HTTP/1.1" 304 - - - -
-2021-11-18 12:35:40,709 5768 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
-2021-11-18 12:35:43,246 5768 INFO Prueba odoo.modules.loading: loading 31 modules... 
-2021-11-18 12:35:43,677 5768 INFO Prueba odoo.modules.registry: module aab__autor: creating or updating database tables 
-2021-11-18 12:35:44,034 5768 INFO Prueba odoo.modules.loading: loading aab__autor/views/views.xml 
-2021-11-18 12:35:44,148 5768 ERROR Prueba odoo.sql_db: bad query: INSERT INTO "ir_act_server" ("id", "create_uid", "create_date", "write_uid", "write_date", "binding_type", "binding_view_types", "code", "model_id", "name", "sequence", "state", "type", "usage") VALUES (nextval('ir_actions_id_seq'), 1, (now() at time zone 'UTC'), 1, (now() at time zone 'UTC'), 'action', 'list,form', '
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      ', 234, 'AAB_Autor server', 5, 'code', 'ir.actions.server', 'ir_actions_server') RETURNING id
-ERROR: el valor null para la columna «activity_user_type» viola la restricción not null
-DETAIL:  La fila que falla contiene (206, AAB_Autor server, ir.actions.server, null, null, action, list,form, 1, 2021-11-18 12:35:40.0221, 1, 2021-11-18 12:35:40.0221, ir_actions_server, code, 5, 234, null, 
-        action = {
-          "type": "ir.actions.act_window",
- ..., null, null, null, null, null, null, null, null, null, null, null, null, null).
- 
-2021-11-18 12:35:44,153 5768 WARNING Prueba odoo.modules.loading: Transient module states were reset 
-2021-11-18 12:35:44,155 5768 ERROR Prueba odoo.modules.registry: Failed to load registry 
-Traceback (most recent call last):
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 712, in parse
-    self._tag_root(de)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 577, in _tag_record
-    record = model._load_records([data], self.mode == 'update')
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4175, in _load_records
-    records = self._load_records_create([data['values'] for data in to_create])
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4089, in _load_records_create
-    return self.create(values)
-  File "<decorator-gen-35>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_actions.py", line 49, in create
-    res = super(IrActions, self).create(vals_list)
-  File "<decorator-gen-3>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3817, in create
-    records = self._create(data_list)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3923, in _create
-    cr.execute(query, params)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 173, in wrapper
-    return f(self, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 250, in execute
-    res = self._obj.execute(query, params)
-psycopg2.errors.NotNullViolation: el valor null para la columna «activity_user_type» viola la restricción not null
-DETAIL:  La fila que falla contiene (206, AAB_Autor server, ir.actions.server, null, null, action, list,form, 1, 2021-11-18 12:35:40.0221, 1, 2021-11-18 12:35:40.0221, ir_actions_server, code, 5, 234, null, 
-        action = {
-          "type": "ir.actions.act_window",
- ..., null, null, null, null, null, null, null, null, null, null, null, null, null).
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\registry.py", line 86, in new
-    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 424, in load_modules
-    force, status, report, loaded_modules, update_module, models_to_check)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 315, in load_marked_modules
-    perform_checks=perform_checks, models_to_check=models_to_check
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 225, in load_module_graph
-    load_data(cr, idref, mode, kind='data', package=package, report=report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 68, in load_data
-    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind, report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 736, in convert_file
-    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 803, in convert_xml_import
-    obj.parse(doc.getroot())
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 721, in parse
-    exc_info[2]
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\pycompat.py", line 13, in reraise
-    raise value.with_traceback(tb)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 712, in parse
-    self._tag_root(de)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 577, in _tag_record
-    record = model._load_records([data], self.mode == 'update')
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4175, in _load_records
-    records = self._load_records_create([data['values'] for data in to_create])
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4089, in _load_records_create
-    return self.create(values)
-  File "<decorator-gen-35>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_actions.py", line 49, in create
-    res = super(IrActions, self).create(vals_list)
-  File "<decorator-gen-3>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3817, in create
-    records = self._create(data_list)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3923, in _create
-    cr.execute(query, params)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 173, in wrapper
-    return f(self, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 250, in execute
-    res = self._obj.execute(query, params)
-odoo.tools.convert.ParseError: "el valor null para la columna «activity_user_type» viola la restricción not null
-DETAIL:  La fila que falla contiene (206, AAB_Autor server, ir.actions.server, null, null, action, list,form, 1, 2021-11-18 12:35:40.0221, 1, 2021-11-18 12:35:40.0221, ir_actions_server, code, 5, 234, null, 
-        action = {
-          "type": "ir.actions.act_window",
- ..., null, null, null, null, null, null, null, null, null, null, null, null, null).
-" while parsing file:/c:/users/user/documents/2dam-sistemasdegestionempresarial/extra_addons/aab__autor/views/views.xml:1, near
-<odoo>
-  <data>
-    <!-- explicit list view definition -->
-
-    <record model="ir.ui.view" id="aab__autor_list">
-      <field name="name">AAB_Autor list</field>
-      <field name="model">aab__autor.aab__autor</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="nombre"/>
-          <field name="edad"/>
-          <field name="fecha_nacimiento"/>
-          <field name="sexo"/>
-        </tree>
-      </field>
-    </record>
-<!--
-    <record model="ir.ui.view" id="aab__autor.list1">
-      <field name="name">AAB_Autor list</field>
-      <field name="model">aab__autor.aab__autor</field>
-      <field name="arch" type="xml">
-        <form>
-          <field name="nombre"/>
-          <field name="edad"/>
-          <field name="fecha_nacimiento"/>
-          <field name="sexo"/>
-        </form>
-      </field>
-    </record>-->
-
-    <!-- actions opening views on models -->
-
-    <record model="ir.actions.act_window" id="aab__autor_action_window">
-      <field name="name">AAB_Autor window</field>
-      <field name="res_model">aab__autor.aab__autor</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-
-    <!-- server action to the one above -->
-
-    <record model="ir.actions.server" id="aab__autor_action_server">
-      <field name="name">AAB_Autor server</field>
-      <field name="model_id" ref="model_aab__autor_aab__autor"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
-
-
-    <!-- Top menu item -->
-
-    <menuitem name="AAB_Autor" id="aab__autor_menu_root"/>
-
-    <!-- menu categories -->
-
-    <menuitem name="Menu 1" id="aab__autor_menu_1" parent="aab__autor_menu_root"/>
-    <menuitem name="Menu 2" id="aab__autor_menu_2" parent="aab__autor_menu_root"/>
-
-    <!-- actions -->
-
-    <menuitem name="List" id="aab__autor_menu_1_list" parent="aab__autor_menu_1" action="aab__autor_action_window"/>
-    <menuitem name="Server to list" id="aab__autor" parent="aab__autor_menu_2" action="aab__autor_action_server"/>
-
-  </data>
-</odoo>
-2021-11-18 12:35:44,384 5768 ERROR Prueba odoo.http: Exception during JSON request handling. 
-Traceback (most recent call last):
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 712, in parse
-    self._tag_root(de)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 577, in _tag_record
-    record = model._load_records([data], self.mode == 'update')
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4175, in _load_records
-    records = self._load_records_create([data['values'] for data in to_create])
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4089, in _load_records_create
-    return self.create(values)
-  File "<decorator-gen-35>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_actions.py", line 49, in create
-    res = super(IrActions, self).create(vals_list)
-  File "<decorator-gen-3>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3817, in create
-    records = self._create(data_list)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3923, in _create
-    cr.execute(query, params)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 173, in wrapper
-    return f(self, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 250, in execute
-    res = self._obj.execute(query, params)
-psycopg2.errors.NotNullViolation: el valor null para la columna «activity_user_type» viola la restricción not null
-DETAIL:  La fila que falla contiene (206, AAB_Autor server, ir.actions.server, null, null, action, list,form, 1, 2021-11-18 12:35:40.0221, 1, 2021-11-18 12:35:40.0221, ir_actions_server, code, 5, 234, null, 
-        action = {
-          "type": "ir.actions.act_window",
- ..., null, null, null, null, null, null, null, null, null, null, null, null, null).
-
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 624, in _handle_exception
-    return super(JsonRequest, self)._handle_exception(exception)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 310, in _handle_exception
-    raise pycompat.reraise(type(exception), exception, sys.exc_info()[2])
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\pycompat.py", line 14, in reraise
-    raise value
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 669, in dispatch
-    result = self._call_function(**self.params)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 350, in _call_function
-    return checked_call(self.db, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\service\model.py", line 94, in wrapper
-    return f(dbname, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 339, in checked_call
-    result = self.endpoint(*a, **kw)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 915, in __call__
-    return self.method(*args, **kw)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\http.py", line 515, in response_wrap
-    response = f(*args, **kw)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\web\controllers\main.py", line 1343, in call_button
-    action = self._call_kw(model, method, args, kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\web\controllers\main.py", line 1331, in _call_kw
-    return call_kw(request.env[model], method, args, kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 387, in call_kw
-    result = _call_kw_multi(method, model, args, kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 374, in _call_kw_multi
-    result = method(recs, *args, **kwargs)
-  File "<decorator-gen-66>", line 2, in button_immediate_upgrade
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_module.py", line 73, in check_and_log
-    return method(self, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_module.py", line 635, in button_immediate_upgrade
-    return self._button_immediate_function(type(self).button_upgrade)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_module.py", line 574, in _button_immediate_function
-    modules.registry.Registry.new(self._cr.dbname, update_module=True)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\registry.py", line 86, in new
-    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 424, in load_modules
-    force, status, report, loaded_modules, update_module, models_to_check)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 315, in load_marked_modules
-    perform_checks=perform_checks, models_to_check=models_to_check
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 225, in load_module_graph
-    load_data(cr, idref, mode, kind='data', package=package, report=report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\modules\loading.py", line 68, in load_data
-    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind, report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 736, in convert_file
-    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 803, in convert_xml_import
-    obj.parse(doc.getroot())
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 721, in parse
-    exc_info[2]
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\pycompat.py", line 13, in reraise
-    raise value.with_traceback(tb)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 712, in parse
-    self._tag_root(de)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 674, in _tag_root
-    f(rec)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\tools\convert.py", line 577, in _tag_record
-    record = model._load_records([data], self.mode == 'update')
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4175, in _load_records
-    records = self._load_records_create([data['values'] for data in to_create])
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 4089, in _load_records_create
-    return self.create(values)
-  File "<decorator-gen-35>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\base\models\ir_actions.py", line 49, in create
-    res = super(IrActions, self).create(vals_list)
-  File "<decorator-gen-3>", line 2, in create
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\api.py", line 336, in _model_create_multi
-    return create(self, arg)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3817, in create
-    records = self._create(data_list)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\models.py", line 3923, in _create
-    cr.execute(query, params)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 173, in wrapper
-    return f(self, *args, **kwargs)
-  File "C:\Program Files (x86)\Odoo 13.0\server\odoo\sql_db.py", line 250, in execute
-    res = self._obj.execute(query, params)
-odoo.tools.convert.ParseError: "el valor null para la columna «activity_user_type» viola la restricción not null
-DETAIL:  La fila que falla contiene (206, AAB_Autor server, ir.actions.server, null, null, action, list,form, 1, 2021-11-18 12:35:40.0221, 1, 2021-11-18 12:35:40.0221, ir_actions_server, code, 5, 234, null, 
-        action = {
-          "type": "ir.actions.act_window",
- ..., null, null, null, null, null, null, null, null, null, null, null, null, null).
-" while parsing file:/c:/users/user/documents/2dam-sistemasdegestionempresarial/extra_addons/aab__autor/views/views.xml:1, near
-<odoo>
-  <data>
-    <!-- explicit list view definition -->
-
-    <record model="ir.ui.view" id="aab__autor_list">
-      <field name="name">AAB_Autor list</field>
-      <field name="model">aab__autor.aab__autor</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="nombre"/>
-          <field name="edad"/>
-          <field name="fecha_nacimiento"/>
-          <field name="sexo"/>
-        </tree>
-      </field>
-    </record>
-<!--
-    <record model="ir.ui.view" id="aab__autor.list1">
-      <field name="name">AAB_Autor list</field>
-      <field name="model">aab__autor.aab__autor</field>
-      <field name="arch" type="xml">
-        <form>
-          <field name="nombre"/>
-          <field name="edad"/>
-          <field name="fecha_nacimiento"/>
-          <field name="sexo"/>
-        </form>
-      </field>
-    </record>-->
-
-    <!-- actions opening views on models -->
-
-    <record model="ir.actions.act_window" id="aab__autor_action_window">
-      <field name="name">AAB_Autor window</field>
-      <field name="res_model">aab__autor.aab__autor</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-
-    <!-- server action to the one above -->
-
-    <record model="ir.actions.server" id="aab__autor_action_server">
-      <field name="name">AAB_Autor server</field>
-      <field name="model_id" ref="model_aab__autor_aab__autor"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
-
-
-    <!-- Top menu item -->
-
-    <menuitem name="AAB_Autor" id="aab__autor_menu_root"/>
-
-    <!-- menu categories -->
-
-    <menuitem name="Menu 1" id="aab__autor_menu_1" parent="aab__autor_menu_root"/>
-    <menuitem name="Menu 2" id="aab__autor_menu_2" parent="aab__autor_menu_root"/>
-
-    <!-- actions -->
-
-    <menuitem name="List" id="aab__autor_menu_1_list" parent="aab__autor_menu_1" action="aab__autor_action_window"/>
-    <menuitem name="Server to list" id="aab__autor" parent="aab__autor_menu_2" action="aab__autor_action_server"/>
-
-  </data>
-</odoo>
-2021-11-18 12:35:44,506 5768 INFO Prueba odoo.modules.loading: loading 1 modules... 
-2021-11-18 12:35:44,560 5768 INFO Prueba odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries 
-2021-11-18 12:35:44,663 5768 INFO Prueba odoo.modules.loading: loading 31 modules... 
-2021-11-18 12:35:44,915 5768 INFO Prueba odoo.modules.loading: 31 modules loaded in 0.25s, 0 queries 
-2021-11-18 12:35:45,377 5768 INFO Prueba odoo.modules.loading: Modules loaded. 
-2021-11-18 12:35:45,388 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:45] "POST /web/dataset/call_button HTTP/1.1" 200 - 1144 1.366 6.478
-2021-11-18 12:35:45,738 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:45] "GET /web/static/src/xml/dialog.xml?debug=1637238945420 HTTP/1.1" 200 - - - -
-2021-11-18 12:35:46,033 5768 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 12:35:46] "GET /web/static/src/xml/crash_manager.xml?debug=1637238945748 HTTP/1.1" 200 - - - -
-2021-11-18 12:35:46,069 5768 INFO Prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
-2021-11-18 12:35:46,449 5768 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
-2021-11-18 12:36:19,456 5768 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 12:36:19] "GET /web HTTP/1.1" 200 - 320 0.389 2.069
-2021-11-18 12:36:19,541 5768 INFO ? odoo.service.server: Initiating shutdown 
-2021-11-18 12:36:19,542 5768 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2021-11-18 13:29:22,053 9528 INFO ? odoo.http: HTTP Configuring static files 
+2021-11-18 13:29:22,182 9528 INFO Prueba odoo.modules.loading: loading 1 modules... 
+2021-11-18 13:29:22,239 9528 INFO Prueba odoo.modules.loading: 1 modules loaded in 0.06s, 0 queries 
+2021-11-18 13:29:22,352 9528 INFO Prueba odoo.modules.loading: loading 32 modules... 
+2021-11-18 13:29:23,484 9528 INFO Prueba odoo.modules.loading: 32 modules loaded in 1.13s, 0 queries 
+2021-11-18 13:29:25,194 9528 INFO Prueba odoo.modules.loading: Modules loaded. 
+2021-11-18 13:29:25,210 9528 INFO Prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2021-11-18 13:29:26,839 9528 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2021-11-18 13:29:28,229 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web HTTP/1.1" 200 - 334 0.465 5.684
+2021-11-18 13:29:28,340 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web/content/452-19b4630/web.assets_common.css HTTP/1.1" 200 - 4 0.004 0.024
+2021-11-18 13:29:28,716 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web/content/453-88c8bf1/web.assets_backend.css HTTP/1.1" 200 - 4 0.011 0.069
+2021-11-18 13:29:28,753 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web/webclient/load_menus/5e79e503e00c5d720967bd1ecb8e4f9ff6ff3cc4 HTTP/1.1" 200 - 1 0.001 0.065
+2021-11-18 13:29:28,796 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web/content/454-19b4630/web.assets_common.js HTTP/1.1" 304 - 4 0.024 0.133
+2021-11-18 13:29:28,798 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:28] "GET /web/content/455-88c8bf1/web.assets_backend.js HTTP/1.1" 304 - 4 0.024 0.133
+2021-11-18 13:29:29,533 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:29] "GET /web/webclient/qweb/94ae1d6233445bcac7cef690ba217dff491f0a07?mods=base,web,base_setup,bus,web_tour,mail,sales_team,calendar,resource,utm,contacts,web_editor,auth_signup,portal,digest,crm,base_import,iap,partner_autocomplete,sms,snailmail,web_diagram,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.076
+2021-11-18 13:29:29,652 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:29] "GET /web/static/src/img/favicon.ico HTTP/1.1" 304 - - - -
+2021-11-18 13:29:29,676 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:29] "GET /web/image/res.company/1/favicon/ HTTP/1.1" 200 - 5 0.005 0.021
+2021-11-18 13:29:30,056 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "GET /web/webclient/translations/0c8e2a95bf74ca54ce0253d5329940e85336cfd9?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Ccalendar%2Cresource%2Cutm%2Ccontacts%2Cweb_editor%2Cauth_signup%2Cportal%2Cdigest%2Ccrm%2Cbase_import%2Ciap%2Cpartner_autocomplete%2Csms%2Csnailmail%2Cweb_diagram%2Cweb_kanban_gauge%2Cweb_unsplash&lang=es_AR HTTP/1.1" 200 - 5 0.069 0.265
+2021-11-18 13:29:30,088 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "GET /web/webclient/locale/es_AR HTTP/1.1" 200 - 1 0.000 0.016
+2021-11-18 13:29:30,412 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - - - -
+2021-11-18 13:29:30,522 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "GET /web/static/src/xml/debug.xml?debug=1637242170147 HTTP/1.1" 200 - - - -
+2021-11-18 13:29:30,647 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.060 0.097
+2021-11-18 13:29:30,647 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "POST /mail/init_messaging HTTP/1.1" 200 - 27 0.129 0.059
+2021-11-18 13:29:30,647 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.100
+2021-11-18 13:29:30,662 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:30] "GET /web/image?model=res.users&field=image_128&id=1 HTTP/1.1" 200 - 5 0.028 0.128
+2021-11-18 13:29:31,031 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "GET /crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:31,078 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "POST /web/action/load HTTP/1.1" 200 - 9 0.013 0.039
+2021-11-18 13:29:31,365 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "POST /web/dataset/call_kw/mail.message/load_views HTTP/1.1" 200 - 21 0.066 0.047
+2021-11-18 13:29:31,422 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 - 2 0.004 0.009
+2021-11-18 13:29:31,756 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 - 7 0.024 0.025
+2021-11-18 13:29:31,883 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:31] "POST /calendar/notify HTTP/1.1" 200 - 3 0.023 0.012
+2021-11-18 13:29:39,384 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:39] "POST /web/action/load HTTP/1.1" 200 - 29 0.066 0.104
+2021-11-18 13:29:40,036 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:40] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 - 72 0.103 0.205
+2021-11-18 13:29:40,474 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:40] "POST /web/dataset/search_read HTTP/1.1" 200 - 3 0.015 0.030
+2021-11-18 13:29:41,029 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /account/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,030 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,038 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,041 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,042 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,363 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /website/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,364 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,365 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /project/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,369 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /stock/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,373 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,677 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,683 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,699 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,700 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /note/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,701 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:41,993 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:41] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,000 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,009 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,017 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,019 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,314 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,331 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,334 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /board/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,358 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,412 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "POST /web/action/load HTTP/1.1" 200 - 17 0.046 0.057
+2021-11-18 13:29:42,661 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,672 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,676 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "POST /web/dataset/call_kw/base.module.update/load_views HTTP/1.1" 200 - 10 0.011 0.042
+2021-11-18 13:29:42,682 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,746 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "POST /web/dataset/call_kw/base.module.update/default_get HTTP/1.1" 200 - 2 0.008 0.008
+2021-11-18 13:29:42,987 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /web/static/src/xml/dialog.xml?debug=1637242182784 HTTP/1.1" 200 - - - -
+2021-11-18 13:29:42,988 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /mail/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:42,996 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:42] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,001 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/project_forecast.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,066 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.008
+2021-11-18 13:29:43,312 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,317 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,319 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,321 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,385 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/website_calendar.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,654 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /survey/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,662 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,667 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,673 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:43,696 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:43] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,006 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 2 0.003 0.029
+2021-11-18 13:29:44,011 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,014 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /website_blog/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,024 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,026 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,333 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.003 0.011
+2021-11-18 13:29:44,346 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /website_forum/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,350 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,354 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,356 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,685 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:44,693 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /repair/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:44,706 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:44] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:47,099 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:47] "POST /web/dataset/call_button HTTP/1.1" 200 - 523 0.562 1.882
+2021-11-18 13:29:49,186 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:49] "POST /web/dataset/search_read HTTP/1.1" 200 - 4 0.018 0.035
+2021-11-18 13:29:49,886 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:49] "GET /base/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:49,891 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:49] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:49,895 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:49] "GET /website_crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:49,902 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:49] "GET /account_check_printing/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:50,975 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:50] "POST /web/dataset/search_read HTTP/1.1" 200 - 7 0.016 0.062
+2021-11-18 13:29:53,443 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['aac__bibloteca'] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:53,450 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['aac__bibloteca'] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:53,452 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['aac__bibloteca'] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:55,936 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:55,991 9528 INFO Prueba odoo.modules.loading: loading 1 modules... 
+2021-11-18 13:29:56,054 9528 INFO Prueba odoo.modules.loading: 1 modules loaded in 0.06s, 0 queries 
+2021-11-18 13:29:56,677 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:29:56] "GET /web/static/src/img/spin.png HTTP/1.1" 304 - - - -
+2021-11-18 13:29:56,771 9528 INFO Prueba odoo.modules.loading: updating modules list 
+2021-11-18 13:29:56,774 9528 INFO Prueba odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2021-11-18 13:29:59,630 9528 INFO Prueba odoo.modules.loading: loading 32 modules... 
+2021-11-18 13:29:59,998 9528 INFO Prueba odoo.modules.registry: module aac__bibloteca: creating or updating database tables 
+2021-11-18 13:30:00,373 9528 INFO Prueba odoo.modules.loading: loading aac__bibloteca/views/views.xml 
+2021-11-18 13:30:00,606 9528 INFO Prueba odoo.modules.loading: loading aac__bibloteca/views/templates.xml 
+2021-11-18 13:30:00,614 9528 INFO Prueba odoo.modules.loading: Module aac__bibloteca: loading demo 
+2021-11-18 13:30:00,618 9528 INFO Prueba odoo.modules.loading: loading aac__bibloteca/demo/demo.xml 
+2021-11-18 13:30:00,650 9528 INFO Prueba odoo.addons.base.models.ir_translation: module aac__bibloteca: no translation for language es_AR 
+2021-11-18 13:30:00,944 9528 INFO Prueba odoo.modules.loading: 32 modules loaded in 1.31s, 0 queries 
+2021-11-18 13:30:01,399 9528 WARNING Prueba odoo.modules.loading: The model aab__autor.aab__autor has no access rules, consider adding one. E.g. access_aab__autor_aab__autor,access_aab__autor_aab__autor,model_aab__autor_aab__autor,base.group_user,1,0,0,0 
+2021-11-18 13:30:01,399 9528 WARNING Prueba odoo.modules.loading: The model aaa__hola_mundo.aaa__hola_mundo has no access rules, consider adding one. E.g. access_aaa__hola_mundo_aaa__hola_mundo,access_aaa__hola_mundo_aaa__hola_mundo,model_aaa__hola_mundo_aaa__hola_mundo,base.group_user,1,0,0,0 
+2021-11-18 13:30:01,400 9528 WARNING Prueba odoo.modules.loading: The model aac_bibloteca.libro has no access rules, consider adding one. E.g. access_aac_bibloteca_libro,access_aac_bibloteca_libro,model_aac_bibloteca_libro,base.group_user,1,0,0,0 
+2021-11-18 13:30:01,400 9528 WARNING Prueba odoo.modules.loading: The model aac_bibloteca.autor has no access rules, consider adding one. E.g. access_aac_bibloteca_autor,access_aac_bibloteca_autor,model_aac_bibloteca_autor,base.group_user,1,0,0,0 
+2021-11-18 13:30:01,770 9528 INFO Prueba odoo.modules.registry: verifying fields for every extended model 
+2021-11-18 13:30:02,277 9528 INFO Prueba odoo.modules.loading: Modules loaded. 
+2021-11-18 13:30:02,286 9528 INFO Prueba odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2021-11-18 13:30:02,292 9528 INFO Prueba odoo.modules.registry: Registry changed, signaling through the database 
+2021-11-18 13:30:02,295 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:02] "POST /web/dataset/call_button HTTP/1.1" 200 - 1698 2.288 6.610
+2021-11-18 13:30:02,654 9528 INFO Prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2021-11-18 13:30:05,559 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:05] "GET /web HTTP/1.1" 200 - 323 0.368 2.541
+2021-11-18 13:30:06,152 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/content/454-19b4630/web.assets_common.js HTTP/1.1" 304 - 4 0.048 0.168
+2021-11-18 13:30:06,155 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/content/455-88c8bf1/web.assets_backend.js HTTP/1.1" 304 - 4 0.066 0.133
+2021-11-18 13:30:06,156 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/content/452-19b4630/web.assets_common.css HTTP/1.1" 200 - 4 0.065 0.164
+2021-11-18 13:30:06,158 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/content/453-88c8bf1/web.assets_backend.css HTTP/1.1" 200 - 4 0.058 0.157
+2021-11-18 13:30:06,170 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/webclient/load_menus/cb720411639c06144522a025583d7e8a8b878087 HTTP/1.1" 200 - 1 0.005 0.136
+2021-11-18 13:30:06,667 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:06] "GET /web/webclient/qweb/94ae1d6233445bcac7cef690ba217dff491f0a07?mods=base,web,base_setup,bus,web_tour,mail,sales_team,calendar,resource,utm,contacts,web_editor,auth_signup,portal,digest,crm,base_import,iap,partner_autocomplete,sms,snailmail,web_diagram,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.074
+2021-11-18 13:30:07,477 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:07] "GET /web/webclient/translations/0c8e2a95bf74ca54ce0253d5329940e85336cfd9?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Ccalendar%2Cresource%2Cutm%2Ccontacts%2Cweb_editor%2Cauth_signup%2Cportal%2Cdigest%2Ccrm%2Cbase_import%2Ciap%2Cpartner_autocomplete%2Csms%2Csnailmail%2Cweb_diagram%2Cweb_kanban_gauge%2Cweb_unsplash&lang=es_AR HTTP/1.1" 200 - 5 0.069 0.210
+2021-11-18 13:30:07,493 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:07] "GET /web/webclient/locale/es_AR HTTP/1.1" 200 - 1 0.000 0.016
+2021-11-18 13:30:07,843 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:07] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - - - -
+2021-11-18 13:30:07,855 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:07] "GET /web/webclient/locale/es_AR HTTP/1.1" 200 - 1 0.001 0.014
+2021-11-18 13:30:07,919 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:07] "GET /web/static/src/xml/debug.xml?debug=1637242207572 HTTP/1.1" 200 - - - -
+2021-11-18 13:30:08,021 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /mail/init_messaging HTTP/1.1" 200 - 27 0.076 0.060
+2021-11-18 13:30:08,027 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.056 0.056
+2021-11-18 13:30:08,089 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "GET /web/image?model=res.users&field=image_128&id=1 HTTP/1.1" 200 - 5 0.059 0.106
+2021-11-18 13:30:08,310 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.010
+2021-11-18 13:30:08,391 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 - 2 0.001 0.010
+2021-11-18 13:30:08,678 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /web/action/load HTTP/1.1" 200 - 9 0.017 0.015
+2021-11-18 13:30:08,759 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /calendar/notify HTTP/1.1" 200 - 3 0.015 0.015
+2021-11-18 13:30:08,825 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:08] "POST /web/dataset/call_kw/mail.message/load_views HTTP/1.1" 200 - 21 0.011 0.080
+2021-11-18 13:30:09,034 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:09] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 - 2 0.008 0.012
+2021-11-18 13:30:09,194 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:09] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 - 7 0.007 0.025
+2021-11-18 13:30:09,425 9528 INFO ? werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:09] "GET /crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2021-11-18 13:30:10,935 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:10] "POST /web/action/load HTTP/1.1" 200 - 13 0.032 0.060
+2021-11-18 13:30:11,348 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:11] "POST /web/dataset/call_kw/aac_bibloteca.libro/load_views HTTP/1.1" 200 - 14 0.055 0.035
+2021-11-18 13:30:11,721 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:11] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.000 0.012
+2021-11-18 13:30:14,455 9528 INFO Prueba odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2021-11-18 13:30:14,490 9528 INFO Prueba odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2021-11-18 13:30:14,490 9528 INFO Prueba odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2021-11-18 13:30:14,537 9528 INFO Prueba odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2021-11-18 13:30:14,537 9528 INFO Prueba odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2021-11-18 13:30:14,584 9528 INFO Prueba odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2021-11-18 13:30:14,584 9528 INFO Prueba odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2021-11-18 13:30:14,615 9528 INFO Prueba odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2021-11-18 13:30:14,615 9528 INFO Prueba odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2021-11-18 13:30:14,662 9528 INFO Prueba odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2021-11-18 13:30:15,608 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:15] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.003 0.008
+2021-11-18 13:30:16,856 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:16] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.038 50.140
+2021-11-18 13:30:19,222 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:19] "POST /web/action/load HTTP/1.1" 200 - 13 0.021 0.061
+2021-11-18 13:30:19,606 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:19] "POST /web/dataset/call_kw/aac_bibloteca.autor/load_views HTTP/1.1" 200 - 14 0.014 0.037
+2021-11-18 13:30:19,969 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:19] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.004 0.008
+2021-11-18 13:30:21,052 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:21] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.031 50.028
+2021-11-18 13:30:42,077 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:42] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.001 0.007
+2021-11-18 13:30:44,020 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:44] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.007
+2021-11-18 13:30:45,845 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:45] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.002 0.009
+2021-11-18 13:30:48,281 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:48] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.003 0.008
+2021-11-18 13:30:49,716 9528 INFO Prueba werkzeug: 127.0.0.1 - - [18/Nov/2021 13:30:49] "POST /web/dataset/search_read HTTP/1.1" 200 - 2 0.003 0.014

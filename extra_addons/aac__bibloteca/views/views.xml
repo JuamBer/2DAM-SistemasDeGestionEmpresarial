@@ -1,0 +1,75 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aac_bibloteca_libro_tree">
+      <field name="name">aac_bibloteca_libro_list</field>
+      <field name="model">aac_bibloteca.libro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="aac_bibloteca_libro">
+      <field name="name">aac_bibloteca_libro_window</field>
+      <field name="res_model">aac_bibloteca.libro</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aac_bibloteca_autor_tree">
+      <field name="name">aac_bibloteca_autor_list</field>
+      <field name="model">aac_bibloteca.autor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="aac_bibloteca_autor">
+          <field name="name">aac_bibloteca_autor_window</field>
+          <field name="res_model">aac_bibloteca.autor</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="aac__bibloteca.action_server">
+      <field name="name">AAC_Bibloteca server</field>
+      <field name="model_id" ref="model_aac__bibloteca_aac__bibloteca"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+    -->
+
+
+    <!-- Top menu item -->
+    <menuitem name="AAC_Bibloteca" id="aac__bibloteca.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Menu 1" id="aac__bibloteca.menu_1" parent="aac__bibloteca.menu_root"/>
+    <menuitem name="Menu 2" id="aac__bibloteca.menu_2" parent="aac__bibloteca.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Libro" id="aac__bibloteca.menu_1_list" parent="aac__bibloteca.menu_1"
+              action="aac__bibloteca.aac_bibloteca_libro"/>
+    <menuitem name="Autor" id="aac__bibloteca" parent="aac__bibloteca.menu_2"
+              action="aac__bibloteca.aac_bibloteca_autor"/>
+
+  </data>
+</odoo>

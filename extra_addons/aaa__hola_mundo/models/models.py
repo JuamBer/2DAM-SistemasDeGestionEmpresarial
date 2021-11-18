@@ -2,6 +2,9 @@
 
 from odoo import models, fields, api
 
+# Module Name: AAA_HolaMundo
+# Classes:
+#   aaa__hola_mundo (python) -> aaa__hola_mundo.aaa__hola_mundo (sql)
 
 class aaa__hola_mundo(models.Model):
     _name = 'aaa__hola_mundo.aaa__hola_mundo'
@@ -13,8 +16,3 @@ class aaa__hola_mundo(models.Model):
     fecha_nacimiento = fields.Date()
     sexo = fields.Selection([('Hombre','Hombre'),('Mujer','Mujer')])
     descripcion = fields.Text()
-
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
