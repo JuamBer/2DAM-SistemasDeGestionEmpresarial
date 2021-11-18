@@ -1,0 +1,63 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="aab__autor.list">
+      <field name="name">AAB_Autor list</field>
+      <field name="model">aab__autor.aab__autor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="edad"/>
+          <field name="foto"/>
+          <field name="fecha_nacimiento"/>
+          <field name="sexo"/>
+          <field name="descripcion"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="aab__autor.action_window">
+      <field name="name">AAB_Autor window</field>
+      <field name="res_model">aab__autor.aab__autor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+
+    <record model="ir.actions.server" id="aab__autor.action_server">
+      <field name="name">AAB_Autor server</field>
+      <field name="model_id" ref="model_aab__autor_aab__autor"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="AAB_Autor" id="aab__autor.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="aab__autor.menu_1" parent="aab__autor.menu_root"/>
+    <menuitem name="Menu 2" id="aab__autor.menu_2" parent="aab__autor.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="List" id="aab__autor.menu_1_list" parent="aab__autor.menu_1"
+              action="aab__autor.action_window"/>
+    <menuitem name="Server to list" id="aab__autor" parent="aab__autor.menu_2"
+              action="aab__autor.action_server"/>
+
+  </data>
+</odoo>
