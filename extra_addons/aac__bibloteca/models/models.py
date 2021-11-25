@@ -14,8 +14,8 @@ class libro(models.Model):
      name = fields.Char(string="Nombre", required=True)
      paginas = fields.Integer(string="Número de Páginas")
 
-     autor_id = fields.Many2one('aac_bibloteca.autor', string='Id Autor')
-     editorial_id = fields.Many2one('aac_bibloteca.editorial', string='Id Editorial')
+     autor_id = fields.Many2one('aac_bibloteca.autor', string='Autor')
+     editorial_id = fields.Many2one('aac_bibloteca.editorial', string='Editorial')
 
 class autor(models.Model):
     _name = 'aac_bibloteca.autor'

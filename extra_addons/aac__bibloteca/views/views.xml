@@ -8,6 +8,8 @@
         <tree>
           <field name="name"/>
           <field name="paginas"/>
+          <field name="autor_id"/>
+          <field name="editorial_id"/>
         </tree>
       </field>
     </record>
