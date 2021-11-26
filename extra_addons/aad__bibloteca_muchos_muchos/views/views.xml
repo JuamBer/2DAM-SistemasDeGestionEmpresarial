@@ -1,0 +1,104 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aad_bibloteca_muchos_muchos_libro_tree">
+      <field name="name">Libro List</field>
+      <field name="model">aad_bibloteca_muchos_muchos.libro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="paginas"/>
+          <field name="editorial_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="aad_bibloteca_muchos_muchos_libro">
+      <field name="name">Libro Window</field>
+      <field name="res_model">aad_bibloteca_muchos_muchos.libro</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aad_bibloteca_muchos_muchos_autor_tree">
+      <field name="name">Autor List</field>
+      <field name="model">aad_bibloteca_muchos_muchos.autor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="edad"/>
+          <field name="fecha_nacimiento"/>
+          <field name="sexo"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="aad_bibloteca_muchos_muchos_autor">
+          <field name="name">Autor Window</field>
+          <field name="res_model">aad_bibloteca_muchos_muchos.autor</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aad_bibloteca_muchos_muchos_editorial_tree">
+      <field name="name">Editorial List</field>
+      <field name="model">aad_bibloteca_muchos_muchos.editorial</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="aad_bibloteca_muchos_muchos_editorial">
+          <field name="name">Editorial Window</field>
+          <field name="res_model">aad_bibloteca_muchos_muchos.editorial</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="aac__bibloteca.action_server">
+      <field name="name">AAC_Bibloteca server</field>
+      <field name="model_id" ref="model_aac__bibloteca_aac__bibloteca"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+    -->
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="AAD_Bibloteca_Muchos_Muchos" id="aad__bibloteca_muchos_muchos.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Libro" id="aad__bibloteca_muchos_muchos.menu_1" parent="aad__bibloteca_muchos_muchos.menu_root" action="aad__bibloteca_muchos_muchos.aad_bibloteca_muchos_muchos_libro"/>
+    <menuitem name="Autor" id="aad__bibloteca_muchos_muchos.menu_2" parent="aad__bibloteca_muchos_muchos.menu_root" action="aad__bibloteca_muchos_muchos.aad_bibloteca_muchos_muchos_autor"/>
+    <menuitem name="Editorial" id="aad__bibloteca_muchos_muchos.menu_3" parent="aad__bibloteca_muchos_muchos.menu_root" action="aad__bibloteca_muchos_muchos.aad_bibloteca_muchos_muchos_editorial"/>
+
+    <!-- actions
+    <menuitem name="Libro" id="aac__bibloteca.menu_1_list" parent="aac__bibloteca.menu_1"
+              action="aac__bibloteca.aac_bibloteca_libro"/>
+    <menuitem name="Autor" id="aac__bibloteca.menu_2_list" parent="aac__bibloteca.menu_2"
+              action="aac__bibloteca.aac_bibloteca_autor"/>
+    <menuitem name="Editorial" id="aac__bibloteca.menu_3_list" parent="aac__bibloteca.menu_3"
+              action="aac__bibloteca.aac_bibloteca_editorial"/>
+    -->
+  </data>
+</odoo>

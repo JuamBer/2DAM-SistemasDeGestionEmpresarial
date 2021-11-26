@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aad__bibloteca_muchos_muchos_aad__bibloteca_muchos_muchos,aad__bibloteca_muchos_muchos.aad__bibloteca_muchos_muchos,model_aad__bibloteca_muchos_muchos_aad__bibloteca_muchos_muchos,base.group_user,1,1,1,1

@@ -1,0 +1,7 @@
+-Datos Autor
+    -Importación sin problemas
+-Datos Editorial
+    -Importación sin problemas
+-Datos Autor
+    -Importación con problemas en las claves ajenas.
+    -Solo es posible importar los campos name y páginas
