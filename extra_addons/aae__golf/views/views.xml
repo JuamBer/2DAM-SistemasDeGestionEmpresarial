@@ -1,0 +1,146 @@
+<odoo>
+  <data>
+
+
+    <!-- CAMPO -->
+    <record model="ir.ui.view" id="aae_golf_campo_tree">
+      <field name="name">Campo List</field>
+      <field name="model">aae_golf.campo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="direccion"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_campo">
+      <field name="name">Campo Window</field>
+      <field name="res_model">aae_golf.campo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- HOYO -->
+    <record model="ir.ui.view" id="aae_golf_hoyo_tree">
+      <field name="name">Hoyo List</field>
+      <field name="model">aae_golf.hoyo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="par"/>
+          <field name="dificultad"/>
+          <field name="id_campo"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_hoyo">
+      <field name="name">Hoyo Window</field>
+      <field name="res_model">aae_golf.hoyo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- PARTICIPANTE -->
+    <record model="ir.ui.view" id="aae_golf_participante_tree">
+      <field name="name">Participante List</field>
+      <field name="model">aae_golf.participante</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="edad"/>
+          <field name="pais"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_participante">
+      <field name="name">Participante Window</field>
+      <field name="res_model">aae_golf.participante</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- TORNEO -->
+    <record model="ir.ui.view" id="aae_golf_torneo_tree">
+      <field name="name">Torneo List</field>
+      <field name="model">aae_golf.torneo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="year"/>
+          <field name="id_campo"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_torneo">
+      <field name="name">Torneo Window</field>
+      <field name="res_model">aae_golf.torneo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- TORNEO -->
+    <record model="ir.ui.view" id="aae_golf_puntos_tree">
+      <field name="name">Puntos List</field>
+      <field name="model">aae_golf.puntos</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="id_torneo"/>
+          <field name="id_participante"/>
+          <field name="id_hoyo"/>
+          <field name="dia"/>
+          <field name="golpes"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_puntos">
+      <field name="name">Puntos Window</field>
+      <field name="res_model">aae_golf.puntos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- TORNEO -->
+    <record model="ir.ui.view" id="aae_golf_patrocinador_tree">
+      <field name="name">Patrocinador List</field>
+      <field name="model">aae_golf.patrocinador</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="aae_golf_patrocinador">
+      <field name="name">Patrocinador Window</field>
+      <field name="res_model">aae_golf.patrocinador</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- TORNEO PATROCINADOR REL -->
+    <record model="ir.ui.view" id="pepa">
+      <field name="name">torneo_patrocinador_rel List</field>
+      <field name="model">aae_golf_torneo_patrocinador_rel</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="patrocinador_id"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="pepe">
+      <field name="name">Torneo Patrocinador Window</field>
+      <field name="res_model">aae_golf_torneo_patrocinador_rel</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="AAE_Golf" id="aae__golf.menu_root"/>
+
+    <!-- menu categories -->
+
+
+
+    <menuitem name="Campos" id="aae__golf.campo" parent="aae__golf.menu_root" action="aae_golf_campo"/>
+    <menuitem name="Hoyos" id="aae__golf.hoyo" parent="aae__golf.menu_root" action="aae_golf_hoyo"/>
+    <menuitem name="Participantes" id="aae__golf.participante" parent="aae__golf.menu_root" action="aae_golf_participante"/>
+    <menuitem name="Torneo" id="aae__golf.torneo" parent="aae__golf.menu_root" action="aae_golf_torneo"/>
+    <menuitem name="Puntos" id="aae__golf.puntos" parent="aae__golf.menu_root" action="aae_golf_puntos"/>
+    <menuitem name="Patrocinadores" id="aae__golf.patrocinador" parent="aae__golf.menu_root" action="aae_golf_patrocinador"/>
+   <!--<menuitem name="TorneoPatrocinadorRel" id="aae__golf.torneo_patrocinador_rel" parent="aae__golf.menu_root" action="aae_golf_torneo_patrocinador_rel"/>-->
+  </data>
+</odoo>
