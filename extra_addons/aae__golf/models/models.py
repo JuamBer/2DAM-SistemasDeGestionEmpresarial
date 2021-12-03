@@ -46,7 +46,7 @@ class torneo(models.Model):
 
     name = fields.Char(string="Nombre", required=True)
     year = fields.Integer(string="Año")
-    id_campo = fields.Many2one('aae_golf.campo', string='Campo')
+    id_campo = fields.Many2one('aae_golf.campo', string='Campo', required=True)
     ids_patrocinadores = fields.Many2many(
         'aae_golf.patrocinador',
         'aae_golf_torneo_patrocinador_rel',
@@ -59,8 +59,8 @@ class puntos(models.Model):
     _name = 'aae_golf.puntos'
     _description = 'aae_golf.puntos'
 
-    id_torneo = fields.Many2one('aae_golf.torneo', string='Torneo')
-    id_participante = fields.Many2one('aae_golf.participante', string='Participante')
-    id_hoyo = fields.Many2one('aae_golf.hoyo', string='Hoyo')
-    dia = fields.Integer(string="Dia")
-    golpes = fields.Integer(string="Golpes")
+    id_torneo = fields.Many2one('aae_golf.torneo', string='Torneo', required=True)
+    id_participante = fields.Many2one('aae_golf.participante', string='Participante', required=True)
+    id_hoyo = fields.Many2one('aae_golf.hoyo', string='Hoyo', required=True)
+    dia = fields.Integer(string="Dia", required=True)
+    golpes = fields.Integer(string="Golpes", required=True)

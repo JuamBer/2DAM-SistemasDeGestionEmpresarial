@@ -112,22 +112,6 @@
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- TORNEO PATROCINADOR REL -->
-    <record model="ir.ui.view" id="pepa">
-      <field name="name">torneo_patrocinador_rel List</field>
-      <field name="model">aae_golf_torneo_patrocinador_rel</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="patrocinador_id"/>
-        </tree>
-      </field>
-    </record>
-    <record model="ir.actions.act_window" id="pepe">
-      <field name="name">Torneo Patrocinador Window</field>
-      <field name="res_model">aae_golf_torneo_patrocinador_rel</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
     <!-- Top menu item -->
     <menuitem name="AAE_Golf" id="aae__golf.menu_root"/>
 
@@ -141,6 +125,5 @@
     <menuitem name="Torneo" id="aae__golf.torneo" parent="aae__golf.menu_root" action="aae_golf_torneo"/>
     <menuitem name="Puntos" id="aae__golf.puntos" parent="aae__golf.menu_root" action="aae_golf_puntos"/>
     <menuitem name="Patrocinadores" id="aae__golf.patrocinador" parent="aae__golf.menu_root" action="aae_golf_patrocinador"/>
-   <!--<menuitem name="TorneoPatrocinadorRel" id="aae__golf.torneo_patrocinador_rel" parent="aae__golf.menu_root" action="aae_golf_torneo_patrocinador_rel"/>-->
   </data>
 </odoo>
