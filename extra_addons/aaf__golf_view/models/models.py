@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from mock.mock import self
+
 from odoo import models, fields, api
 import datetime
 
