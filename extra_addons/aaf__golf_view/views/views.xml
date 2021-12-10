@@ -89,11 +89,37 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="aaf_golf_view_torneo_form">
+      <field name="name">Torneo Form</field>
+      <field name="model">aaf_golf_view.torneo</field>
+      <field name="arch" type="xml">
+        <form string="Torneo Form">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <separator colspan="4"/>
+              <field name="start_date"/>
+              <field name="end_date"/>
+            </group>
+            <notebook>
+              <page string="Campo">
+                <label for="id_campo" string="Campo"/>
+                <field name="id_campo"/>
+              </page>
+              <page string="Patrocinadores">
+                <field name="ids_patrocinadores"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
     <record model="ir.ui.view" id="aaf_golf_view_torneo_calendar">
       <field name="name">Torneo Calendar</field>
       <field name="model">aaf_golf_view.torneo</field>
       <field name="arch" type="xml">
-        <calendar string="Torneo Calendar" date_start="start_date">
+        <calendar string="Torneo Calendar" date_start="start_date" date_stop="end_date">
           <field name="name"/>
           <field name="start_date"/>
           <field name="id_campo"/>
@@ -132,7 +158,7 @@
           <field name="id_torneo"/>
           <field name="id_participante"/>
           <field name="id_hoyo"/>
-          <field name="dia"/>
+          <field name="dia" widget="progressbar"/>
           <field name="golpes"/>
           <group string="Group By">
             <filter name="by_participante" string="Participante" context="{'group_by': 'id_participante'}"></filter>
@@ -148,20 +174,48 @@
       <field name="name">Puntos Calendar</field>
       <field name="model">aaf_golf_view.puntos</field>
       <field name="arch" type="xml">
-        <calendar string="Puntos Calendar" date_start="dia">
+        <calendar string="Puntos Calendar" date_start="date">
           <field name="id_torneo"/>
           <field name="id_participante"/>
           <field name="id_hoyo"/>
           <field name="dia"/>
           <field name="golpes"/>
+
+
         </calendar>
       </field>
     </record>
 
+
+    <record model="ir.ui.view" id="aaf_golf_view_puntos_form">
+      <field name="name">Puntos Form</field>
+      <field name="model">aaf_golf_view.puntos</field>
+      <field name="arch" type="xml">
+        <form string="Torneo Form">
+          <sheet>
+            <group>
+              <field name="id_torneo"/>
+              <field name="id_participante"/>
+              <field name="id_hoyo"/>
+            </group>
+            <group>
+              <field name="golpes"/>
+            </group>
+            <group>
+              <field name="start_date"/>
+              <field name="dia"/>
+              <field name="date"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
     <record model="ir.actions.act_window" id="aaf_golf_view_puntos">
       <field name="name">Puntos Window</field>
       <field name="res_model">aaf_golf_view.puntos</field>
-      <field name="view_mode">tree,form,search</field>
+      <field name="view_mode">tree,form,search,calendar</field>
     </record>
 
 
@@ -175,6 +229,26 @@
         </tree>
       </field>
     </record>
+
+    <record model="ir.ui.view" id="aaf_golf_view_patrocinador_form">
+      <field name="name">Patrocinador Form</field>
+      <field name="model">aaf_golf_view.patrocinador</field>
+      <field name="arch" type="xml">
+        <form string="Patocinador Form">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+            <notebook>
+              <page string="Torneos">
+                <field name="ids_torneos"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="aaf_golf_view_patrocinador">
       <field name="name">Patrocinador Window</field>
       <field name="res_model">aaf_golf_view.patrocinador</field>
@@ -185,8 +259,6 @@
     <menuitem name="AAF_Golf_View" id="aaf__golf_view.menu_root"/>
 
     <!-- menu categories -->
-
-
 
     <menuitem name="Campos" id="aaf__golf_view.campo" parent="aaf__golf_view.menu_root" action="aaf_golf_view_campo"/>
     <menuitem name="Hoyos" id="aaf__golf_view.hoyo" parent="aaf__golf_view.menu_root" action="aaf_golf_view_hoyo"/>

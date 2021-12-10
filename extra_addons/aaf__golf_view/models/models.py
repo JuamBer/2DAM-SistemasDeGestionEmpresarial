@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-
+from mock.mock import self
 from odoo import models, fields, api
+import datetime
+
 
 class patrocinador(models.Model):
     _name = 'aaf_golf_view.patrocinador'
@@ -14,6 +16,7 @@ class patrocinador(models.Model):
         'torneo_id',
         string='Torneos'
     )
+
 
 class campo(models.Model):
     _name = 'aaf_golf_view.campo'
@@ -29,8 +32,9 @@ class hoyo(models.Model):
 
     name = fields.Char(string="Nombre", required=True)
     par = fields.Integer(string="Par")
-    dificultad = fields.Selection([('Baja','Baja'), ('Media','Media'), ('Alta','Alta')])
+    dificultad = fields.Selection([('Baja', 'Baja'), ('Media', 'Media'), ('Alta', 'Alta')])
     id_campo = fields.Many2one('aaf_golf_view.campo', string='Campo')
+
 
 class participante(models.Model):
     _name = 'aaf_golf_view.participante'
@@ -47,6 +51,7 @@ class torneo(models.Model):
 
     name = fields.Char(string="Nombre", required=True)
     start_date = fields.Date(string="Fecha de Inicio")
+    end_date = fields.Date(string="Fecha de Fin")
     id_campo = fields.Many2one('aaf_golf_view.campo', string='Campo', required=True)
     ids_patrocinadores = fields.Many2many(
         'aaf_golf_view.patrocinador',
@@ -56,6 +61,7 @@ class torneo(models.Model):
         string='Patrocinadores'
     )
 
+
 class puntos(models.Model):
     _name = 'aaf_golf_view.puntos'
     _description = 'aaf_golf_view.puntos'
@@ -63,11 +69,12 @@ class puntos(models.Model):
     id_torneo = fields.Many2one('aaf_golf_view.torneo', string='Torneo', required=True)
     id_participante = fields.Many2one('aaf_golf_view.participante', string='Participante', required=True)
     id_hoyo = fields.Many2one('aaf_golf_view.hoyo', string='Hoyo', required=True)
-    dia = fields.Integer(string="Dia", required=True)
-    #date = fields.Date(string="Fecha", compute=True, store=True)
-    golpes = fields.Integer(string="Golpes", required=True)
+    dia = fields.Integer(string='Dia', default='1', required=True)
+    golpes = fields.Integer(string='Golpes', required=True)
 
-    #@api.model()
-    #def calcular_fecha(self):
-    #    for punto in self:
-    #        punto.date = ((punto.id_torneo.start_date) + punto.dia)
+    start_date = fields.Date(string='Fecha Inicio Torneo', related='id_torneo.start_date', readonly=True)
+    date = fields.Date(string='Fecha', compute='_calcular_fecha')
+
+    @api.depends('start_date','dia')
+    def _calcular_fecha(self):
+        self.date = self.start_date + datetime.timedelta(days=(self.dia-1))
