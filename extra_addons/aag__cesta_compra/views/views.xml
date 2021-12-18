@@ -1,0 +1,126 @@
+<odoo>
+  <data>
+    <!-- INVENTARIO -->
+      <!-- INVENTARIO TREE -->
+      <record model="ir.ui.view" id="aag_cesta_compra_inventario_tree">
+        <field name="name">Inventario List</field>
+        <field name="model">aag__cesta_compra.inventario</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="cantidad"/>
+            <field name="tipo_producto"/>
+            <field name="precio"/>
+          </tree>
+        </field>
+      </record>
+
+      <!-- INVENTARIO WINDOW -->
+      <record model="ir.actions.act_window" id="aag_cesta_compra_inventario">
+        <field name="name">Inventario Window</field>
+        <field name="res_model">aag__cesta_compra.inventario</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+
+    <!-- COMPRADOR -->
+      <!-- COMPRADOR TREE -->
+      <record model="ir.ui.view" id="aag_cesta_compra_comprador_tree">
+        <field name="name">Comprador List</field>
+        <field name="model">aag__cesta_compra.comprador</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="apellido1"/>
+            <field name="apellido2"/>
+            <field name="direccion"/>
+          </tree>
+        </field>
+      </record>
+      <!-- COMPRADOR FORM -->
+      <record model="ir.ui.view" id="aag_cesta_compra_comprador_form">
+        <field name="name">Comprador Form</field>
+        <field name="model">aag__cesta_compra.comprador</field>
+        <field name="arch" type="xml">
+          <form string="Torneo Form">
+            <sheet>
+              <group>
+                <field name="nif"/>
+                <field name="name"/>
+                <field name="apellido1"/>
+                <field name="apellido2"/>
+                <separator colspan="4"/>
+                <field name="id_pais"/>
+                <field name="direccion"/>
+              </group>
+              <group>
+                <field name="fecha_nac"/>
+                <field name="edad"/>
+                <separator colspan="4"/>
+                <field name="nif_tutor" attrs="{'invisible':[('edad','&gt;',17)], 'required':[('edad','&lt;',18)]}"/>
+              </group>
+              <notebook>
+                <page string="Compras">
+                  <label for="dinero_gastado" string="Dinero Gastado"/>
+                  <field name="dinero_gastado"/>
+                  <field name="ids_compras"/>
+                </page>
+              </notebook>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+      <!-- COMPRADOR WINDOW -->
+      <record model="ir.actions.act_window" id="aag_cesta_compra_comprador">
+        <field name="name">Comprador Window</field>
+        <field name="res_model">aag__cesta_compra.comprador</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+
+    <!-- COMPRA -->
+      <!-- COMPRA TREE -->
+      <record model="ir.ui.view" id="aag_cesta_compra_compra_tree">
+        <field name="name">Compra List</field>
+        <field name="model">aag__cesta_compra.compra</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="id_inventario"/>
+            <field name="id_comprador"/>
+            <field name="cantidad"/>
+            <field name="fecha"/>
+          </tree>
+        </field>
+      </record>
+
+      <!-- COMPRA CALENDAR -->
+        <record model="ir.ui.view" id="aag_cesta_compra_compra_calendar">
+          <field name="name">Compra Calendar</field>
+          <field name="model">aag__cesta_compra.compra</field>
+          <field name="arch" type="xml">
+            <calendar string="Compra Calendar" date_start="fecha">
+              <field name="id_inventario"/>
+              <field name="id_comprador"/>
+              <field name="cantidad"/>
+            </calendar>
+          </field>
+        </record>
+
+      <!-- COMPRA WINDOW -->
+      <record model="ir.actions.act_window" id="aag_cesta_compra_compra">
+        <field name="name">Compra Window</field>
+        <field name="res_model">aag__cesta_compra.compra</field>
+        <field name="view_mode">tree,form,calendar</field>
+      </record>
+
+
+
+    <!-- Top menu item -->
+    <menuitem name="AAG_CestaCompra" id="aag_cesta_compra_menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Inventario" id="aag_cesta_compra_menu_inventario" parent="aag_cesta_compra_menu_root" action="aag__cesta_compra.aag_cesta_compra_inventario"/>
+    <menuitem name="Comprador" id="aag_cesta_compra_menu_comprador" parent="aag_cesta_compra_menu_root" action="aag__cesta_compra.aag_cesta_compra_comprador"/>
+    <menuitem name="Compra" id="aag_cesta_compra_menu_compra" parent="aag_cesta_compra_menu_root" action="aag__cesta_compra.aag_cesta_compra_compra"/>
+  </data>
+</odoo>

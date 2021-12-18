@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "AAF_GolfView",
+    'name': "AAG_CestaCompra",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
