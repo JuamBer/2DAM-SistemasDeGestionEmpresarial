@@ -88,39 +88,34 @@ class compra(models.Model):
     cantidad = fields.Integer(default=0, string="Cantidad", required=True)
     fecha = fields.Date(string="Date")
 
-    @api.constrains('id_inventario')
-    def _check_stock_exists(self):
-        print("FUNCTION _check_stock_exists RUNNING (Compra)")
-        if self.id_inventario.cantidad < 0:
-            print("\tThere is not stock from " + str(self.id_inventario.name))
-            raise ValidationError("There is not stock from "+str(self.id_inventario.name))
-        else:
-            print("\tStock of " + str(self.id_inventario.name) + " exists")
-
-    @api.constrains('cantidad')
+    @api.constrains('id_inventario','cantidad')
     def _check_stock_is_enough(self):
         print("FUNCTION _check_stock_is_enough RUNNING (Compra)")
-        if self.id_inventario.cantidad < self.cantidad:
-            print("\tNot enough stock: " + str(self.id_inventario.cantidad))
-            raise ValidationError("Not enough stock: " + str(self.id_inventario.cantidad))
+        stock = self.id_inventario.cantidad
+        producto = self.id_inventario.name
+        cantidad = self.cantidad
+        mensaje = None
+
+        if cantidad >= 0:
+            if  stock < 0:
+                mensaje = "\tThere is not stock from " + str(producto)
+                print(mensaje)
+                raise ValidationError(mensaje)
+            else:
+                mensaje = "\tStock of " + str(producto) + " exists"
+                print(mensaje)
+                if stock < cantidad:
+                    mensaje = "\tNot enough stock: " + str(stock) + "(Stock) vs " + str(cantidad)+"(Cantidad)"
+                    print(mensaje)
+                    raise ValidationError(mensaje)
+                else:
+                    mensaje = "\tEnough stock: " + str(stock) + "(Stock) vs " + str(cantidad)+"(Cantidad)"
+                    print(mensaje)
+                    self._descontar_cantidad_inventario()
         else:
-            print("\tEnough stock: " + str(self.id_inventario.cantidad))
-
-    @api.onchange('cantidad')
-    def _descontar_cantidad_inventario(self):
-        print("FUNCTION _descontar_cantidad_inventario RUNNING (Compra)")
-
-        cantidadInventarioSinDescontar = self.id_inventario.cantidad
-        cantidadCompra = self.cantidad
-
-        print("\tcantidadInventarioSinDescontar: " + str(cantidadInventarioSinDescontar))
-        print("\tcantidadCompra: " + str(cantidadCompra))
-
-        if cantidadInventarioSinDescontar >= cantidadCompra:
-            self.id_inventario.cantidad = cantidadInventarioSinDescontar - cantidadCompra
-            print("\tcantidadInventarioDescontado: " + str(cantidadInventarioSinDescontar - cantidadCompra))
-        else:
-            print("\tNada Descontado")
+            mensaje = "\tYou can't buy" + str(cantidad) + "(Unids)"
+            print(mensaje)
+            raise ValidationError(mensaje)
 
     def name_get(self):
         print("FUNCTION name_get RUNNING (Compra)")
@@ -131,3 +126,13 @@ class compra(models.Model):
             result.append((compra.id, name))
         return result
 
+    def _descontar_cantidad_inventario(self):
+        print("FUNCTION _descontar_cantidad_inventario RUNNING (Compra)")
+
+        cantidadInventarioSinDescontar = self.id_inventario.cantidad
+        cantidadCompra = self.cantidad
+        print("\tcantidadInventarioSinDescontar: " + str(cantidadInventarioSinDescontar))
+        print("\tcantidadCompra: " + str(cantidadCompra))
+
+        self.id_inventario.cantidad = cantidadInventarioSinDescontar - cantidadCompra
+        print("\tcantidadInventarioDescontado: " + str(cantidadInventarioSinDescontar - cantidadCompra))
