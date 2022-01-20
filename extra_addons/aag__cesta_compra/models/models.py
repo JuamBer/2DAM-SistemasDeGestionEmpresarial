@@ -88,6 +88,8 @@ class compra(models.Model):
     cantidad = fields.Integer(default=0, string="Cantidad", required=True)
     fecha = fields.Date(string="Date")
 
+    _order = 'id_comprador, fecha'
+
     @api.constrains('id_inventario','cantidad')
     def _check_stock_is_enough(self):
         print("FUNCTION _check_stock_is_enough RUNNING (Compra)")
