@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <record model="ir.ui.view" id="aah_herencia_libro_autor_libro_tree">
+    <record id="aah_herencia_libro_autor_libro_tree" model="ir.ui.view">
       <field name="name">Libro List</field>
       <field name="model">aah_herencia_libro_autor.libro</field>
       <field name="arch" type="xml">
