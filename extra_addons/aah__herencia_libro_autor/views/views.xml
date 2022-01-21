@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aah_herencia_libro_autor_libro_tree">
+      <field name="name">Libro List</field>
+      <field name="model">aah_herencia_libro_autor.libro</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="paginas"/>
+          <field name="autor_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="aah_herencia_libro_autor_libro">
+      <field name="name">Libro Window</field>
+      <field name="res_model">aah_herencia_libro_autor.libro</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="aah_herencia_libro_autor_autor_tree">
+      <field name="name">Autor List</field>
+      <field name="model">aah_herencia_libro_autor.autor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="edad"/>
+          <field name="fecha_nacimiento"/>
+          <field name="sexo"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="aah_herencia_libro_autor_autor">
+      <field name="name">Autor Window</field>
+      <field name="res_model">aah_herencia_libro_autor.autor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="AAH_Herencia_Libro_Autor" id="aah__herencia_libro_autor.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Libro" id="aah__herencia_libro_autor.menu_1" parent="aah__herencia_libro_autor.menu_root" action="aah_herencia_libro_autor_libro"/>
+    <menuitem name="Autor" id="aah__herencia_libro_autor.menu_2" parent="aah__herencia_libro_autor.menu_root" action="aah_herencia_libro_autor_autor"/>
+
+  </data>
+</odoo>

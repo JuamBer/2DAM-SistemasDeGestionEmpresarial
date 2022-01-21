@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="aai_herencia_libro_tree">
+      <field name="name">Libro List</field>
+      <field name="model">aah_herencia_libro_autor.libro</field>
+      <filed name="inherit_id" ref="aah_herencia_libro_autor.aah_herencia_libro_autor_libro"/>
+      <field name="arch" type="xml">
+          <field name="paginas" position="after">
+            <field name="editorial_id"/>
+          </field>
+      </field>
+    </record>
+  </data>
+</odoo>
+
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="aai_herencia_libro_autor_tree" model="ir.ui.view">
+        <field name="name">Libro</field>
+        <field name="model">modulo1.libro</field>
+        <field name="inherit_id" ref="aai_herencia_libro_autor.aah_herencia_libro_autor_libro_tree"/>
+        <field name="arch" type="xml">
+            <field name="paginas" position="before">
+                <field name="editorial_id"/>
+            </field>
+        </field>
+    </record>
+  </data>
+</odoo>

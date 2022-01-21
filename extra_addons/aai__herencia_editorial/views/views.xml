@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="aai_herencia_editorial_editorial_tree">
+      <field name="name">Editorial List</field>
+      <field name="model">aai_herencia_editorial.editorial</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="aai_herencia_editorial_editorial">
+      <field name="name">Editorial Window</field>
+      <field name="res_model">aai_herencia_editorial.editorial</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="AAI_Herencia_Editorial" id="aai__herencia_editorial.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Editorial" id="aai__herencia_editorial.menu_1" parent="aai__herencia_editorial.menu_root" action="aai_herencia_editorial_editorial"/>
+
+  </data>
+</odoo>
