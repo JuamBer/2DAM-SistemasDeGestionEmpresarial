@@ -14,4 +14,4 @@ class editorial(models.Model):
 
     name = fields.Char(string="Nombre", required=True)
 
-    #libros_ids = fields.One2many('aah_herencia_libro_autor.libro','editorial_id', string='Libros')
+    libros_ids = fields.One2many('aah_herencia_libro_autor.libro','editorial_id', string='Libros')
