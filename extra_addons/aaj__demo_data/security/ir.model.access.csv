@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aaj__demo_data_aaj__demo_data,aaj__demo_data.aaj__demo_data,model_aaj__demo_data_aaj__demo_data,base.group_user,1,1,1,1
