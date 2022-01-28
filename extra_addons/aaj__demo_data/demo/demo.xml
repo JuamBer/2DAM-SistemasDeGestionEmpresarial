@@ -5,19 +5,19 @@
             <field name="name">Tablero Roble 90x180x5</field>
             <field name="cantidad">180</field>
             <field name="tipo_producto">Roble</field>
-            <field name="precio">22,99</field>
+            <field name="precio">22.99</field>
         </record>
         <record id="inventario2" model="aaj_demo_data.inventario">
             <field name="name">Tablero Abeto 90x180x5</field>
             <field name="cantidad">79</field>
             <field name="tipo_producto">Abeto</field>
-            <field name="precio">24,99</field>
+            <field name="precio">24.99</field>
         </record>
         <record id="inventario3" model="aaj_demo_data.inventario">
             <field name="name">Tablero Pino 90x180x5</field>
             <field name="cantidad">214</field>
             <field name="tipo_producto">Pino</field>
-            <field name="precio">18,99</field>
+            <field name="precio">18.99</field>
         </record>
         <!--COMPRADOR-->
         <record id="comprador1" model="aaj_demo_data.comprador">
@@ -27,8 +27,7 @@
             <field name="apellido1">Soriano</field>
             <field name="apellido2">Zapata</field>
             <field name="direccion">Rúa Marrero, 60, 30º 4º</field>
-            <field name="fecha_nac">12/07/2000</field>
-            <field name="id_pais">Andorra</field>
+            <field name="fecha_nac">2000-07-12</field>
         </record>
         <record id="comprador2" model="aaj_demo_data.comprador">
             <field name="nif">234324443J</field>
@@ -37,15 +36,14 @@
             <field name="apellido1">García</field>
             <field name="apellido2">Tordera</field>
             <field name="direccion">Calle Carolina, 92, Ático 7º</field>
-            <field name="fecha_nac">24/11/2004</field>
-            <field name="id_pais">Estados Unidos</field>
+            <field name="fecha_nac">2004-11-24</field>
         </record>
         <!--COMPRAS-->
         <record id="compra1" model="aaj_demo_data.compra">
             <field name="id_inventario" ref="inventario1"/>
             <field name="id_comprador" ref="comprador1"/>
             <field name="cantidad">5</field>
-            <field name="fecha">01/27/2022</field>
+            <field name="fecha">2022-01-27</field>
         </record>
     </data>
 </odoo>
