@@ -1,23 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
-
-
-# class aaj__demo_data(models.Model):
-#     _name = 'aaj__demo_data.aaj__demo_data'
-#     _description = 'aaj__demo_data.aaj__demo_data'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
-# -*- coding: utf-8 -*-
-
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 from datetime import timedelta, date
