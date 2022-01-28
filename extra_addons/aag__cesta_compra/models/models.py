@@ -83,6 +83,7 @@ class compra(models.Model):
     _name = 'aag__cesta_compra.compra'
     _description = 'aag__cesta_compra.compra'
 
+
     id_inventario = fields.Many2one(comodel_name='aag__cesta_compra.inventario', string='Inventario', required=True)
     id_comprador = fields.Many2one(comodel_name='aag__cesta_compra.comprador', string='Comprador', required=True)
     cantidad = fields.Integer(default=0, string="Cantidad", required=True)
@@ -97,7 +98,6 @@ class compra(models.Model):
         producto = self.id_inventario.name
         cantidad = self.cantidad
         mensaje = None
-
         if cantidad >= 0:
             if  stock < 0:
                 mensaje = "\tThere is not stock from " + str(producto)
