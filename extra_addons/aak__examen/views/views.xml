@@ -1,0 +1,72 @@
+<odoo>
+  <data>
+    <!-- ENTITY1 -->
+      <!-- ENTITY1 TREE -->
+      <record model="ir.ui.view" id="aak_examen_entity1_tree">
+        <field name="name">Entity1 List</field>
+        <field name="model">aak_examen.entity1</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="value"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ENTITY1 WINDOW -->
+    <record model="ir.actions.act_window" id="aak_examen_entity1">
+      <field name="name">Entity1 Window</field>
+      <field name="res_model">aak_examen.entity1</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  <!-- ENTITY2 -->
+    <!-- ENTITY2 TREE -->
+      <record model="ir.ui.view" id="aak_examen_entity2_tree">
+        <field name="name">Entity2 List</field>
+        <field name="model">aak_examen.entity2</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="value"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ENTITY2 WINDOW -->
+    <record model="ir.actions.act_window" id="aak_examen_entity2">
+      <field name="name">Entity2 Window</field>
+      <field name="res_model">aak_examen.entity2</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  <!-- ENTITY3 -->
+    <!-- ENTITY3 TREE -->
+      <record model="ir.ui.view" id="aak_examen_entity3_tree">
+        <field name="name">Entity3 List</field>
+        <field name="model">aak_examen.entity3</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="value"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ENTITY3 WINDOW -->
+    <record model="ir.actions.act_window" id="aak_examen_entity3">
+      <field name="name">Entity3 Window</field>
+      <field name="res_model">aak_examen.entity3</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="AAK_Examen" id="aak_examen_menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Entity1" id="aak_examen_menu_1" parent="aak_examen_menu_root" action="aak_examen_entity1"/>
+    <menuitem name="Entity2" id="aak_examen_menu_2" parent="aak_examen_menu_root" action="aak_examen_entity2"/>
+    <menuitem name="Entity3" id="aak_examen_menu_3" parent="aak_examen_menu_root" action="aak_examen_entity3"/>
+
+  </data>
+</odoo>
