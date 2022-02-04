@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "AAK_Examen",
+    'name': "saez",
 
     'summary': """
-         Examen final de la asignatura Sistemas de Gestión Empresarial.""",
+        Examen Odoo13""",
 
     'description': """
-        Examen final de la asignatura Sistemas de Gestión Empresarial.
+        Examen Odoo13
     """,
 
     'author': "Juan Sáez García",
-    'website': "http://www.juamber.com",
+    'website': "https://www.juamber.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml

@@ -1,0 +1,150 @@
+<odoo>
+  <data>
+    <!-- ALUMNO -->
+      <!-- ALUMNO TREE -->
+      <record model="ir.ui.view" id="saez_alumno_tree">
+        <field name="name">Alumno List</field>
+        <field name="model">saez.alumno</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="apellido1"/>
+            <field name="apellido2"/>
+            <field name="fecha_nacimiento"/>
+            <field name="sexo"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ALUMNO WINDOW -->
+    <record model="ir.actions.act_window" id="saez_alumno">
+      <field name="name">Alumno Window</field>
+      <field name="res_model">saez.alumno</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  <!-- PROYECTO -->
+    <!-- PROYECTO TREE -->
+      <record model="ir.ui.view" id="saez_proyecto_tree">
+        <field name="name">Proyecto List</field>
+        <field name="model">saez.proyecto</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="descripcion"/>
+          </tree>
+        </field>
+      </record>
+    <!-- PROYECTO CALENDAR -->
+      <record model="ir.ui.view" id="saez_proyecto_calendar">
+        <field name="name">Proyecto Calendar</field>
+        <field name="model">saez.proyecto</field>
+        <field name="arch" type="xml">
+          <calendar string="Proyecto Calendar" date_start="fecha_entrega" color="name">
+            <field name="descripcion"/>
+          </calendar>
+        </field>
+      </record>
+
+    <!-- PROYECTO FORM -->
+      <record model="ir.ui.view" id="saez_proyecto_form">
+        <field name="name">Proyecto Form</field>
+        <field name="model">saez.proyecto</field>
+        <field name="arch" type="xml">
+          <form string="Torneo Form">
+
+              <group>
+                <!--el attrs hay que hacerlo funcionar -->
+                <field name="name" attrs="{'readonly': [('estado_id','!=', '1')]}"/>
+                <field name="descripcion"/>
+                <field name="fecha_inicio"/>
+                <field name="fecha_entrega"/>
+                <field name="proyecto_definitivo"/>
+                <separator colspan="4"/>
+                <field name="nota"/>
+                <field name="aprobado"/>
+                <separator colspan="4"/>
+                <field name="alumno_id"/>
+                <field name="estado_id"/>
+                <field name="asignatura_id"/>
+              </group>
+          </form>
+        </field>
+      </record>
+    <!-- PROYECTO WINDOW -->
+    <record model="ir.actions.act_window" id="saez_proyecto">
+      <field name="name">Proyecto Window</field>
+      <field name="res_model">saez.proyecto</field>
+      <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+  <!-- ESTADO -->
+    <!-- ESTADO TREE -->
+      <record model="ir.ui.view" id="saez_estado_tree">
+        <field name="name">Estado List</field>
+        <field name="model">saez.estado</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="duracion"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ESTADO WINDOW -->
+    <record model="ir.actions.act_window" id="saez_estado">
+      <field name="name">Estado Window</field>
+      <field name="res_model">saez.estado</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- TITULO -->
+    <!-- TITULO TREE -->
+      <record model="ir.ui.view" id="saez_titulo_tree">
+        <field name="name">Titulo List</field>
+        <field name="model">saez.titulo</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- TITULO WINDOW -->
+    <record model="ir.actions.act_window" id="saez_titulo">
+      <field name="name">Titulo Window</field>
+      <field name="res_model">saez.titulo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- ASIGNATURA -->
+    <!-- ASIGNATURA TREE -->
+      <record model="ir.ui.view" id="saez_asignatura_tree">
+        <field name="name">Asignatura List</field>
+        <field name="model">saez.asignatura</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- ASIGNATURA WINDOW -->
+    <record model="ir.actions.act_window" id="saez_asignatura">
+      <field name="name">Asignatura Window</field>
+      <field name="res_model">saez.asignatura</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    <menuitem name="ExamenSaez" id="saez_menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Almuno" id="saez_menu_1" parent="saez_menu_root" action="saez_alumno"/>
+    <menuitem name="Proyecto" id="saez_menu_2" parent="saez_menu_root" action="saez_proyecto"/>
+    <menuitem name="Estado" id="saez_menu_3" parent="saez_menu_root" action="saez_estado"/>
+    <menuitem name="Titulo" id="saez_menu_4" parent="saez_menu_root" action="saez_titulo"/>
+    <menuitem name="Asignatura" id="saez_menu_5" parent="saez_menu_root" action="saez_asignatura"/>
+  </data>
+</odoo>

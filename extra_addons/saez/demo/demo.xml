@@ -1,0 +1,124 @@
+<odoo>
+    <data>
+        <!-- ALMUNO -->
+          <record id="alumno0" model="saez.alumno">
+            <field name="name">Juan</field>
+            <field name="apellido1">Saez</field>
+            <field name="apellido2">Garcia</field>
+            <field name="fecha_nacimiento">2002-08-08</field>
+            <field name="sexo">Hombre</field>
+            <field name="pais_id">43</field>
+          </record>
+
+          <record id="alumno1" model="saez.alumno">
+            <field name="name">Ivan</field>
+            <field name="apellido1">Soriano</field>
+            <field name="apellido2">Bazata</field>
+            <field name="fecha_nacimiento">2001-09-17</field>
+            <field name="sexo">Hombre</field>
+            <field name="pais_id">3</field>
+          </record>
+
+          <record id="alumno2" model="saez.alumno">
+            <field name="name">Ana</field>
+            <field name="apellido1">Bou</field>
+            <field name="apellido2">Marin</field>
+            <field name="fecha_nacimiento">2002-07-21</field>
+            <field name="sexo">Mujer</field>
+            <field name="pais_id">24</field>
+          </record>
+
+          <record id="alumno3" model="saez.alumno">
+            <field name="name">Anhelina</field>
+            <field name="apellido1">Russu</field>
+            <field name="apellido2">Kurpieska</field>
+            <field name="fecha_nacimiento">2003-03-22</field>
+            <field name="sexo">Mujer</field>
+            <field name="pais_id">11</field>
+          </record>
+
+        <!-- ESTADO -->
+          <record id="estado0" model="saez.estado">
+            <field name="name">Borrador</field>
+            <field name="duracion">10</field>
+          </record>
+          <record id="estado1" model="saez.estado">
+            <field name="name">Segundo Borrador</field>
+            <field name="duracion">15</field>
+          </record>
+          <record id="estado2" model="saez.estado">
+            <field name="name">Fase de Finalizacion</field>
+            <field name="duracion">20</field>
+          </record>
+          <record id="estado3" model="saez.estado">
+            <field name="name">Entrega</field>
+            <field name="duracion">5</field>
+          </record>
+
+      <!-- ASIGNATURA -->
+          <record id="titulo0" model="saez.titulo">
+            <field name="name">DAM</field>
+          </record>
+          <record id="titulo1" model="saez.titulo">
+            <field name="name">DAW</field>
+          </record>
+          <record id="titulo2" model="saez.titulo">
+            <field name="name">ASIR</field>
+          </record>
+
+      <!-- ASIGNATURA -->
+          <record id="asignatura0" model="saez.asignatura">
+            <field name="name">Sistemas De Gestion Empresarial</field>
+          </record>
+          <record id="asignatura1" model="saez.asignatura">
+            <field name="name">Acceso a Datos</field>
+          </record>
+          <record id="asignatura2" model="saez.asignatura">
+            <field name="name">Desarrollo de Interfaces</field>
+          </record>
+        <record id="asignatura3" model="saez.asignatura">
+            <field name="name">Empresa e Iniciatiba Emprendedora</field>
+          </record>
+
+        <!-- PROYECTO -->
+          <record id="proyecto0" model="saez.proyecto">
+            <field name="name">Proyecto Final SGE</field>
+            <field name="descripcion">Un modulo de Odoo13</field>
+            <field name="fecha_inicio">2021-12-02</field>
+            <field name="fecha_entrega">2022-01-02</field>
+            <field name="alumno_id" ref="alumno0"/>
+            <field name="estado_id" ref="estado0"/>
+            <field name="asignatura_id" ref="asignatura0"/>
+          </record>
+          <record id="proyecto1" model="saez.proyecto">
+            <field name="name">Mi Proyecto Personal</field>
+            <field name="descripcion">Pagina web de una tienda</field>
+            <field name="fecha_inicio">2021-12-02</field>
+            <field name="fecha_entrega">2022-01-05</field>
+            <field name="alumno_id" ref="alumno0"/>
+            <field name="estado_id" ref="estado3"/>
+            <field name="asignatura_id" ref="asignatura1"/>
+          </record>
+          <record id="proyecto2" model="saez.proyecto">
+            <field name="name">Otro Proyecto</field>
+            <field name="descripcion">Lorem Ipsum</field>
+            <field name="fecha_inicio">2021-12-02</field>
+            <field name="fecha_entrega">2022-01-04</field>
+            <field name="alumno_id" ref="alumno1"/>
+            <field name="estado_id" ref="estado2"/>
+            <field name="asignatura_id" ref="asignatura2"/>
+          </record>
+          <record id="proyecto3" model="saez.proyecto">
+            <field name="name">Otro Otro Proyecto</field>
+            <field name="descripcion">Lorem Ipsum</field>
+            <field name="fecha_inicio">2021-12-02</field>
+            <field name="fecha_entrega">2022-01-11</field>
+            <field name="alumno_id" ref="alumno2"/>
+            <field name="estado_id" ref="estado0"/>
+            <field name="asignatura_id" ref="asignatura3"/>
+          </record>
+
+
+
+    </data>
+</odoo>
