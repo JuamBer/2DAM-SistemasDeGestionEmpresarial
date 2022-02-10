@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aak_seguridad_inventario_principal,aak_seguridad.aak_seguridad_inventario_principal,model_aak_seguridad_inventario,group_cestacompra_principal,1,1,1,1
+access_aak_seguridad_inventario_comprador,aak_seguridad.aak_seguridad_inventario_comprador,model_aak_seguridad_inventario,group_cestacompra_comprador,1,0,0,0
