@@ -1,5 +1,7 @@
 # Sistemas De Gestión Empresarial 2º DAM
 
+Si eres un estudiante de este instituto hazme un favor y [firma está petición](https://chng.it/msTpT5S9) para que añadan a IES Abastos como Institución Educativa en LinkedIn.
+
 ## Tecnologías 🚀
 
 * **Python 3.7**  
